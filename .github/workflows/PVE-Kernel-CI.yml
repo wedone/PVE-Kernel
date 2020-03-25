@@ -9,7 +9,7 @@ on:
   #  branches:
   #   - master
   schedule:
-     - cron: 0 0 0 8/10 * ? 
+     - cron: 0 0 8/10 * *
   # release:
   #   types: [published]
   #watch:
