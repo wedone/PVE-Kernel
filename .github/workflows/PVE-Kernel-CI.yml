@@ -85,7 +85,7 @@ jobs:
       - name: Upload File
         uses: actions/upload-artifact@master
         with:
-          name: PVE_Kernel_yfdoor
+          name: $REPO_BRANCH
           path: PVE
 
       # 更新项目
@@ -95,8 +95,8 @@ jobs:
         run: |
           sudo rm -rf pve-kernel PVE tmp.txt .git*
           git init
-          git config user.name "yfdoor"
-          git config user.email "yfdoor@github.com"          
+          git config user.name "wedone"
+          git config user.email "wedone@msn.com"          
           git add .
           git commit -m "Update PVE-Kernel Package"
-          git push --force --quiet https://$GITHUB_TOKEN@github.com/yfdoor/PVE-Kernel.git HEAD:Kernel-Package
+          git push --force --quiet https://$GITHUB_TOKEN@github.com/wedone/PVE-Kernel.git HEAD:Kernel-Package
