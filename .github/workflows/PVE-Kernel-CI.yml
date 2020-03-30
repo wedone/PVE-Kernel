@@ -85,7 +85,7 @@ jobs:
       - name: Upload File
         uses: actions/upload-artifact@master
         with:
-          name: $REPO_BRANCH
+          name: PVE_Kernel
           path: PVE
 
       # 更新项目
